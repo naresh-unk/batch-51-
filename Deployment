@@ -1,0 +1,15 @@
+we can configure below things--
+spec:
+  terminationGracePeriodSeconds: 30
+  containers:
+  - name: my_container
+    image: my_image:latest
+    imagePullPolicy: "Always"
+
+Then below commands
+
+kubectl set image deployment/my-deployment mycontainer=myimage:latest
+
+kubectl set image deployment/my-deployment mycontainer=myimage
+
+It will actually be triggering the rolling-update but be sure you have also imagePullPolicy: "Always" set.
