@@ -1,0 +1,5 @@
+i think we can do thins by using below commands
+
+curl <node-ip>:<node-port>        # curl <node-ip>:31000
+curl <service-ip>:<service-port>  # curl <svc-ip>:8000
+curl <pod-ip>:<target-port>       # curl <pod-ip>:80
